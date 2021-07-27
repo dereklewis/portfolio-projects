@@ -72,13 +72,17 @@ a {
 }
 
 .about-me h2 {
-  background-color: var(--accentYellow);
-  flex-basis: 25%;
   padding: 15px;
+  flex-basis: 100%;
+  align-items: center;
+  text-align: center;
 }
 
 .about-me p {
-  background-color: var(--accentYellow);
+  padding: 15px;
+  flex-basis: 100%;
+  align-items: center;
+  text-align: center;
 }
 
 .wall {
@@ -89,12 +93,26 @@ a {
   background-position: center;
 }
 
-@media screen and (max-width: 992px) {
-  .site-header {
-    background: #772014;
-  }
+.work {
+  display: flex;
+  height: 100px;
+  background-color: var(--accentBlue);
 }
 
+.work h2 {
+  display: flex;
+  height: 100px;
+  background-color: var(--accentBlue);
+}
+
+@media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 768px) {
+  .site-header h1 {
+    display: inline;
+  }
+}
 @media screen and (max-width: 768px) {
   .site-header ul li {
     flex-flow: column wrap;
