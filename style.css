@@ -28,9 +28,7 @@ body {
   padding: 30px 30px 30px 0px;
   text-decoration: none;
   justify-content: space-between;
-  /* align-items: flex-end; */
   background-color: var(--dark);
-  /* new code entered */
   align-items: center;
 }
 
@@ -68,7 +66,8 @@ a {
 .about-me {
   display: flex;
   flex-flow: row wrap;
-  height: 100px;
+  height: 200px;
+  background-color: (var(--accentYellow));
 }
 
 .about-me h2 {
@@ -76,6 +75,7 @@ a {
   flex-basis: 100%;
   align-items: center;
   text-align: center;
+  background-color: var(--accentYellow);
 }
 
 .about-me p {
@@ -83,6 +83,7 @@ a {
   flex-basis: 100%;
   align-items: center;
   text-align: center;
+  background-color: var(--accentYellow);
 }
 
 .wall {
