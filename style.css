@@ -104,33 +104,46 @@ body {
 
 .work {
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
   height: 100px;
   background-color: var(--accentBlue);
   padding: 5px;
 }
 
-.work h2 {
-  background-color: var(--accentBlue);
-  margin: 10px;
+.project-cards h2 {
+  background-color: var(--accentMelon);
+  padding: 15px;
   text-align: center;
-  color: var(--accentYellow);
+  width: 100%;
+  color: var(--dark);
+}
+
+.project-cards h4 {
+  position: relative;
 }
 
 .project-cards {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
+  align-items: center;
 }
 
 #project1 {
   flex-basis: 100%;
-  background-image: url("../portfolio-projects/matt-chris-pua-9AEQArex0BA-unsplash.jpg");
 }
 
-.other-projects {
+#ocean {
+}
+
+#lake {
+}
+#mountain {
+}
+
+/* .other-projects {
   flex-basis: 50%;
   background-image: url("../portfolio-projects/matt-chris-pua-9AEQArex0BA-unsplash.jpg");
-}
+} */
 
 @media screen and (max-width: 768px) {
   .site-header nav {
@@ -158,11 +171,5 @@ body {
     flex-flow: column wrap;
     align-items: center;
     display: inline-block;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .about-me {
-    background-color: #c4ff;
   }
 }
