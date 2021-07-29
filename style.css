@@ -96,13 +96,25 @@ body {
 }
 
 .project-cards h4 {
-  position: relative;
+  margin: 5px;
 }
 
 .project-cards {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
+}
+
+.project-cards a {
+  border: 5px solid var(--accentBlue);
+}
+
+a:hover {
+  border-color: var(--accentMelon);
+}
+
+#derek {
+  border: 2px solid var(--accentMelon);
 }
 
 #project1 {
