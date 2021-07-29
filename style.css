@@ -120,6 +120,8 @@ body {
   display: flex;
   flex-flow: column wrap;
   margin: 20px;
+  background-color: var(--accentYellow);
+  border: 5px solid var(--accentBlue);
 }
 
 .about-me h2 {
@@ -127,11 +129,13 @@ body {
   flex-basis: 100%;
   align-items: center;
   text-align: center;
+  background-color: var(--accentYellow);
 }
 
 .about-me p {
   padding: 15px;
   text-align: center;
+  background-color: var(--accentYellow);
 }
 
 #derek {
@@ -145,14 +149,32 @@ body {
   display: flex;
   flex-flow: column wrap;
   text-align: center;
+  background-color: var(--accentMelon);
+}
+
+.footer-bar h2 {
+  margin: 20px;
+  background-color: var(--accentMelon);
 }
 
 .footer-bar nav ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  background-color: var(--accentMelon);
+}
+
+.footer-bar nav ul li {
+  background-color: var(--accentMelon);
+  color: var(--dark);
 }
 
 @media screen and (max-width: 768px) {
+  .site-header {
+    flex-flow: column wrap;
+    align-items: center;
+    display: inline-block;
+  }
+
   .site-header nav {
     display: flex;
     justify-content: center;
@@ -171,12 +193,5 @@ body {
 
   .site-header ul li {
     margin: 0px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .site-header {
-    flex-flow: column wrap;
-    align-items: center;
-    display: inline-block;
   }
 }
